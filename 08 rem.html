@@ -29,6 +29,31 @@
 </body>
 </html>
 <script>
+
+	/*
+
+	##### rem：移动web开发
+
+	*   默认字体大小是16px
+
+	*   在<html>中设置字体大小
+
+	*   与em的区别：
+
+	    -   em是在父级设置字体大小受影响
+
+	*   移动端适配
+
+	    -   首先获取屏幕的宽度
+
+	    -   计算当前屏幕宽度和640的比例
+
+	    -   计算出font-size的值
+
+	    -   改变html的font-size的值
+
+	*/
+	// 1、
 	window.onresize = function(){
 		var html = document.getElementsByTagName('html')[0];
 		var width = html.offsetWidth;
@@ -36,19 +61,19 @@
 		html.style.fontSize = (width>=640?640:width)/640*100 + 'px';
 	};
 
-	 /*var html = document.getElementsByTagName('html')[0];
-        if(html){
-            var w = window.innerWidth;
-            var fontSize = (w>640?640:w)/640 * 100;
-            html.style.fontSize = fontSize + 'px';
-        }
-        window.onload = function(){
-            window.onresize = function(){
-                var w = window.innerWidth;
-                console.log(w);
-                var fontSize = (w>640?640:w)/640 * 100;
-                html.style.fontSize = fontSize + 'px';
-            }
-        }*/
-
+  	// 2、
+  	//     var html = document.getElementsByTagName('html')[0];
+  	//     if(html){
+  	//         var w = window.innerWidth;
+  	//         var fontSize = (w>640?640:w)/640 * 100;
+  	//         html.style.fontSize = fontSize + 'px';
+  	//     }
+  	//     window.onload = function(){
+  	//         window.onresize = function(){
+  	//             var w = window.innerWidth;
+  	//             console.log(w);
+  	//             var fontSize = (w>640?640:w)/640 * 100;
+  	//             html.style.fontSize = fontSize + 'px';
+  	//         }
+  	//     }
 </script>
