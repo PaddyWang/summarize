@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px;">
+<head>
+	<meta charset="UTF-8">
+	<title>rem</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			width: 6.4rem;
+			height: 6.4rem;
+			background-color: pink;
+			font-size: .14rem;
+			margin: 0 auto;
+		}
+		p {
+			width: 50%;
+			height: 50%;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>这是一个p</p>
+	</div>
+</body>
+</html>
+<script>
+	window.onresize = function(){
+		var html = document.getElementsByTagName('html')[0];
+		var width = html.offsetWidth;
+		console.log(width);
+		html.style.fontSize = (width>=640?640:width)/640*100 + 'px';
+	};
+
+	 /*var html = document.getElementsByTagName('html')[0];
+        if(html){
+            var w = window.innerWidth;
+            var fontSize = (w>640?640:w)/640 * 100;
+            html.style.fontSize = fontSize + 'px';
+        }
+        window.onload = function(){
+            window.onresize = function(){
+                var w = window.innerWidth;
+                console.log(w);
+                var fontSize = (w>640?640:w)/640 * 100;
+                html.style.fontSize = fontSize + 'px';
+            }
+        }*/
+
+</script>
