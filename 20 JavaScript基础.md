@@ -1,5 +1,7 @@
 # JavaScript基础
 
+> PaddyWang
+
 *   JavaScript 包含： `ECMAScript、DOM和BOM`。
 *   JavaScript 的基本类型有 ：`string、number、boolean`。
 *   JavaScript 的复合类型有 ：`String、Number、Boolean、Date、Array、Math、RegExp`，还有两个核心类型：`Object和Function`。

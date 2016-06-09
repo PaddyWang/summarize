@@ -1,4 +1,7 @@
 # JS中String的高级操作
+
+> PaddyWang
+
 ### String（高级API）
 
 *   字符串索引操作

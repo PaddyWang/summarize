@@ -1,6 +1,9 @@
 ### 1、历史管理
 
->* history对象
+> PaddyWang
+
+* history对象
+
 >
 >    -  `history.back();`     *// 后退*
 >    
